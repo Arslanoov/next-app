@@ -1,5 +1,7 @@
 import * as React from "react"
 
+import TryButton from "@/components/base/try-button/TryButton"
+
 import styles from "../styles/modules/Nav.module.sass"
 
 interface NavProps {
@@ -17,11 +19,7 @@ const Nav: React.FC<NavProps> = ({ light = false, withoutButton = false }: NavPr
         <li className={styles.item}>Testiminial</li>
         <li className={styles.item}>FAQ</li>
       </ul>
-      {withoutButton ? "" : (
-        <div className={styles.button}>
-          Try for free
-        </div>
-      )}
+      {withoutButton ? "" : <TryButton />}
     </nav>
   )
 }

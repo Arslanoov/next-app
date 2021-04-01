@@ -1,6 +1,6 @@
 import * as React from "react"
 
-import styles from "../../styles/modules/components/base/Logo.module.sass"
+import styles from "@/styles/modules/components/base/Logo.module.sass"
 
 interface LogoProps {
   light?: boolean

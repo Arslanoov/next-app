@@ -2,7 +2,7 @@ import * as React from "react"
 
 import styles from "@/styles/modules/Header.module.sass"
 
-import Logo from "@/components/base/Logo"
+import Logo from "@/components/base/logo/Logo"
 import Nav from "@/modules/Nav"
 
 const Header: React.FC = () => {
