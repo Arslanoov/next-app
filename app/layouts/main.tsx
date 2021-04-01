@@ -1,8 +1,10 @@
 import * as React from "react"
 import Head from "next/head"
 
-import Header from "../modules/Header"
-import Footer from "../modules/Footer"
+import styles from "@/styles/modules/layouts/Main.module.sass"
+
+import Header from "@/modules/Header"
+import Footer from "@/modules/Footer"
 
 interface MainLayoutProps {
   children: React.ReactNode,
@@ -16,9 +18,11 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children, title = "App" }: Main
         <title>{title} | App</title>
       </Head>
       <main>
-        <Header />
-        <div className="container">
-          {children}
+        <div className={styles.page}>
+          <Header />
+          <div className="container">
+            {children}
+          </div>
         </div>
         <Footer />
       </main>

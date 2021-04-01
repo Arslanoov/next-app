@@ -3,7 +3,7 @@ import { useState } from "react"
 
 import styles from "@/styles/modules/Footer.module.sass"
 
-import Logo from "@/components/base/Logo"
+import Logo from "@/components/base/logo/Logo"
 import Nav from "@/modules/Nav"
 import SocialNetworks from "@/components/common/social-networks/SocialNetworks"
 
