@@ -1,13 +1,11 @@
 import * as React from "react"
 import { useState } from "react"
 
-/* TODO: Change to absolute path */
+import styles from "@/styles/modules/Footer.module.sass"
 
-import styles from "../styles/modules/Footer.module.sass"
-
-import Logo from "../components/base/Logo"
-import SocialNetworks from "../components/common/social-networks/SocialNetworks"
-import Nav from "./Nav"
+import Logo from "@/components/base/Logo"
+import Nav from "@/modules/Nav"
+import SocialNetworks from "@/components/common/social-networks/SocialNetworks"
 
 const Footer: React.FC = () => {
   const [networks, setNetworks] = useState([

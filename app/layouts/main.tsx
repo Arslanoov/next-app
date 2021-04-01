@@ -9,7 +9,7 @@ interface MainLayoutProps {
   title?: string
 }
 
-const MainLayout: React.FC = ({ children, title = "App" }: MainLayoutProps) => {
+const MainLayout: React.FC<MainLayoutProps> = ({ children, title = "App" }: MainLayoutProps) => {
   return (
     <>
       <Head>

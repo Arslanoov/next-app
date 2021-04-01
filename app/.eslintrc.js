@@ -40,18 +40,20 @@ module.exports = {
   },
   "plugins": ["react", "react-hooks", "@typescript-eslint"],
   "rules": {
-    "react/react-in-jsx-scope": "off",
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
     "react/display-name": 1,
-    "react/jsx-props-no-spreading": "off",
-    "import/extensions": "off",
-    "arrow-body-style": "off",
 
-    "no-console": 0,
     "semi": ["error", "never"],
     "indent": ["error", 2],
     "no-prototype-builtins": 0,
     "quotes": [ "error", "double" ],
-    "no-unused-vars": "off"
+    "no-unused-vars": "off",
+
+    /* TODO: enable rules */
+    "react/jsx-props-no-spreading": "off",
+    "import/extensions": "off",
+    "arrow-body-style": "off",
+    "react/react-in-jsx-scope": "off",
+    "import/no-unresolved": "off"
   }
 }

@@ -1,11 +1,9 @@
 import * as React from "react"
 
-import Nav from "./Nav"
+import styles from "@/styles/modules/Header.module.sass"
 
-/* TODO: Change to absolute path */
-
-import styles from "../styles/modules/Header.module.sass"
-import Logo from "../components/base/Logo"
+import Logo from "@/components/base/Logo"
+import Nav from "@/modules/Nav"
 
 const Header: React.FC = () => {
   return (

@@ -1,12 +1,13 @@
 import * as React from "react"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import styles from "../../../styles/modules/components/common/SocialNetworks.module.sass"
+import styles from "@/styles/modules/components/common/SocialNetworks.module.sass"
 
-import { Network } from "../../../interfaces/social/network"
+import { NetworkInterface } from "@/interfaces/social/network"
+import {IconName, IconPrefix} from "@fortawesome/fontawesome-common-types";
 
 interface SocialNetworksProps {
-  networks: Array<Network>
+  networks: NetworkInterface[]
 }
 
 const SocialNetworks: React.FC<SocialNetworksProps> = ({ networks }: SocialNetworksProps) => {
@@ -20,7 +21,7 @@ const SocialNetworks: React.FC<SocialNetworksProps> = ({ networks }: SocialNetwo
           target="_blank"
           rel="noreferrer"
         >
-          <FontAwesomeIcon icon={["fab", network.icon]} />
+          <FontAwesomeIcon icon={["fab", network.icon as IconName]} />
         </a>
       ))}
     </div>
