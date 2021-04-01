@@ -2,6 +2,7 @@ import * as React from "react"
 import Head from "next/head"
 
 import Header from "../modules/Header"
+import Footer from "../modules/Footer"
 
 interface MainLayoutProps {
   children: React.ReactNode,
@@ -15,10 +16,11 @@ const MainLayout: React.FC = ({ children, title = "App" }: MainLayoutProps) => {
         <title>{title} | App</title>
       </Head>
       <main>
+        <Header />
         <div className="container">
-          <Header />
           {children}
         </div>
+        <Footer />
       </main>
     </>
   )

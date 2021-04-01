@@ -24,6 +24,7 @@
       "@/pages/*": ["pages/*"],
       "@/layouts/*": ["layouts/*"],
       "@/styles/*": ["styles/*"],
+      "@/interfaces/*": ["interfaces/*"],
     }
   },
   "include": [
