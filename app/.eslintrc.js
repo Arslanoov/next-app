@@ -45,6 +45,7 @@ module.exports = {
     "react/display-name": 1,
     "react/jsx-props-no-spreading": "off",
     "import/extensions": "off",
+    "arrow-body-style": "off",
 
     "no-console": 0,
     "semi": ["error", "never"],

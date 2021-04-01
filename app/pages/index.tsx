@@ -4,7 +4,7 @@ import MainLayout from "../layouts/main"
 
 import classes from "../styles/Home.module.sass"
 
-export default function Home() {
+const Home: React.FC = () => {
   return (
     <MainLayout title="Home">
       <div>Home page</div>
@@ -12,3 +12,5 @@ export default function Home() {
     </MainLayout>
   )
 }
+
+export default Home
