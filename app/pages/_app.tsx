@@ -2,8 +2,18 @@ import * as React from "react"
 
 import { AppProps } from "next/app"
 
-import "../styles/globals.sass"
+import "@/styles/main.sass"
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+import { library } from "@fortawesome/fontawesome-svg-core"
+import { fab } from "@fortawesome/free-brands-svg-icons"
+import { faCheckSquare, faCoffee } from "@fortawesome/free-solid-svg-icons"
+
+library.add(fab, faCheckSquare, faCoffee)
+
+const App: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => {
+  return (
+    <Component {...pageProps} />
+  )
 }
+
+export default App

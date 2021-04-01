@@ -1,20 +1,29 @@
 import * as React from "react"
 import Head from "next/head"
 
+import Header from "../modules/Header"
+import Footer from "../modules/Footer"
+
 interface MainLayoutProps {
   children: React.ReactNode,
   title?: string
 }
 
-export default function MainLayout({ children, title = "App" }: MainLayoutProps) {
+const MainLayout: React.FC<MainLayoutProps> = ({ children, title = "App" }: MainLayoutProps) => {
   return (
     <>
       <Head>
         <title>{title} | App</title>
       </Head>
       <main>
-        {children}
+        <Header />
+        <div className="container">
+          {children}
+        </div>
+        <Footer />
       </main>
     </>
   )
 }
+
+export default MainLayout

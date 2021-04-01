@@ -1,14 +1,16 @@
 import * as React from "react"
 
-import MainLayout from "../layouts/main"
+import MainLayout from "@/layouts/main"
 
-import classes from "../styles/Home.module.sass"
+import classes from "@/styles/modules/pages/Home.module.sass"
 
-export default function Home() {
+const Home: React.FC = () => {
   return (
     <MainLayout title="Home">
-      <div>Home page</div>
+      <h1>Home page</h1>
       <div className={classes.example}>Some text</div>
     </MainLayout>
   )
 }
+
+export default Home
