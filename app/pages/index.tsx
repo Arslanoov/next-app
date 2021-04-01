@@ -2,7 +2,7 @@ import * as React from "react"
 
 import MainLayout from "../layouts/main"
 
-import classes from "../styles/Home.module.sass"
+import classes from "../styles/modules/pages/Home.module.sass"
 
 const Home: React.FC = () => {
   return (
