@@ -18,12 +18,8 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children, title = "App" }: Main
         <title>{title} | App</title>
       </Head>
       <main>
-        <div className={styles.page}>
-          <Header />
-          <div className="container">
-            {children}
-          </div>
-        </div>
+        <Header />
+        {children}
         <Footer />
       </main>
     </>
