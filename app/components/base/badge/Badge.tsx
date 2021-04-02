@@ -12,7 +12,7 @@ const Badge: React.FC<BadgeProps> = ({ content }: BadgeProps) => {
   return (
     <div className={styles.badge}>
       <div className={styles.rounded}>
-        <Image className={styles.icon} src="/assets/images/welcome/icons/check.png" width="30px" height="30px" />
+        <Image className={styles.icon} src="/assets/images/welcome/icons/check.png" width="45px" height="40px" />
       </div>
       <div className={styles.content}>{content}</div>
     </div>
