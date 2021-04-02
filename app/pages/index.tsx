@@ -12,21 +12,31 @@ const Home: React.FC = () => {
   return (
     <MainLayout title="Home">
       <div className={styles.section}>
-        <div className={styles.content}>
-          <Badge content="#1 Editiors Choice App of 2020" />
-          <h1 className={styles.title}>Best app for your modern lifestyle</h1>
-          <p className={styles.description}>
-            Increase productivity with a simple to-do app. app for
-            managing your personal budgets.
-          </p>
-          <div className={styles.demo}>
-            <TryButton />
-            <p>Watch demo video</p>
+        <div className={`${styles.content} container`}>
+          <div className={styles.info}>
+            <div className={styles.item}>
+              <Badge content="#1 Editiors Choice App of 2020" />
+            </div>
+            <h1 className={`${styles.item} ${styles.title}`}>Best app for your modern lifestyle</h1>
+            <p className={`${styles.item} ${styles.description}`}>
+              Increase productivity with a simple to-do app. app for
+              managing your personal budgets.
+            </p>
+            <div className={`${styles.item} ${styles.demo}`}>
+              <div className={styles.button}>
+                <TryButton />
+              </div>
+              <p>Watch demo video</p>
+            </div>
+          </div>
+          <div className={styles.phone}>
+            <Image src="/assets/images/welcome/phone.png" layout="fill" alt="" />
           </div>
         </div>
-        <Image src="/assets/images/welcome/phone.jpg" width="200px" height="200px" alt="" />
+        <div className={styles.city}>
+          <Image src="/assets/images/welcome/city.jpg" layout="fill" alt="" />
+        </div>
       </div>
-      <Image src="/assets/images/welcome/city.jpg" width="100%" height="20vh" alt="" />
     </MainLayout>
   )
 }

@@ -2,7 +2,7 @@ import * as React from "react"
 
 import TryButton from "@/components/base/try-button/TryButton"
 
-import styles from "../styles/modules/Nav.module.sass"
+import styles from "@/styles/modules/Nav.module.sass"
 
 interface NavProps {
   light?: boolean,
