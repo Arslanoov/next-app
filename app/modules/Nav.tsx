@@ -14,6 +14,7 @@ const Nav: React.FC<NavProps> = ({ light = false, withoutButton = false }: NavPr
     <nav className={styles.nav}>
       <ul className={`${styles.list} ${light ? styles.light : ""}`}>
         <li className={styles.item}>Home</li>
+        <li className={styles.item}>Trusted by</li>
         <li className={styles.item}>Key Features</li>
         <li className={styles.item}>Pricing</li>
         <li className={styles.item}>Testiminial</li>
