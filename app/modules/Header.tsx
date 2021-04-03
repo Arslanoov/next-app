@@ -7,11 +7,13 @@ import Nav from "@/modules/Nav"
 
 const Header: React.FC = () => {
   return (
-    <div className="container">
-      <header className={styles.header}>
-        <Logo />
-        <Nav />
-      </header>
+    <div className={styles.wrapper}>
+      <div className="container">
+        <header className={styles.header}>
+          <Logo />
+          <Nav />
+        </header>
+      </div>
     </div>
   )
 }

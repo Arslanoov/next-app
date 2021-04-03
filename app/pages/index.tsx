@@ -30,11 +30,11 @@ const Home: React.FC = () => {
             </div>
           </div>
           <div className={styles.phone}>
-            <Image src="/assets/images/welcome/phone.png" layout="fill" alt="" />
+            <Image quality={100} src="/assets/images/welcome/phone.png" layout="fill" alt="" />
           </div>
         </div>
         <div className={styles.city}>
-          <Image src="/assets/images/welcome/city.jpg" layout="fill" alt="" />
+          <Image quality={100} src="/assets/images/welcome/city.png" layout="fill" alt="" />
         </div>
       </div>
     </MainLayout>
