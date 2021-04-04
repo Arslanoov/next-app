@@ -11,16 +11,22 @@ interface NavProps {
 
 const Nav: React.FC<NavProps> = ({ light = false, withoutButton = false }: NavProps) => {
   return (
-    <nav className={styles.nav}>
-      <ul className={`${styles.list} ${light ? styles.light : ""}`}>
-        <li className={styles.item}>Home</li>
-        <li className={styles.item}>Trusted by</li>
-        <li className={styles.item}>Key Features</li>
-        <li className={styles.item}>Pricing</li>
-        <li className={styles.item}>Testiminial</li>
-        <li className={styles.item}>FAQ</li>
-      </ul>
-      {withoutButton ? "" : <TryButton />}
+    <nav>
+      <div className={styles.nav}>
+        <ul className={`${styles.list} ${light ? styles.light : ""}`}>
+          <li className={styles.item}>Home</li>
+          <li className={styles.item}>Key Features</li>
+          <li className={styles.item}>Pricing</li>
+          <li className={styles.item}>Testiminial</li>
+          <li className={styles.item}>FAQ</li>
+        </ul>
+        <div className={styles.hamburger}>
+          <span className={`${styles.line} ${light ? styles.light : ""}`}> </span>
+        </div>
+        {withoutButton ? "" : <div className={styles.button}>
+          <TryButton />
+        </div>}
+      </div>
     </nav>
   )
 }

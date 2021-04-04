@@ -1,5 +1,4 @@
 import * as React from "react"
-import Image from "next/image"
 
 import MainLayout from "@/layouts/main"
 
@@ -29,13 +28,9 @@ const Home: React.FC = () => {
               <p>Watch demo video</p>
             </div>
           </div>
-          <div className={styles.phone}>
-            <Image quality={100} src="/assets/images/welcome/phone.png" layout="fill" alt="" />
-          </div>
+          <img className={styles.phone} src="/assets/images/welcome/phone.png" alt="" />
         </div>
-        <div className={styles.city}>
-          <Image quality={100} src="/assets/images/welcome/city.png" layout="fill" alt="" />
-        </div>
+        <img className={styles.city} src="/assets/images/welcome/city.png" alt=""/>
       </div>
     </MainLayout>
   )

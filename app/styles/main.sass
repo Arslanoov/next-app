@@ -1,6 +1,36 @@
+@import "~normalize-scss/sass/normalize/import-now"
 @import "variables/main"
 @import "mixins/main"
 @import "functions/main"
-@import "normalize"
 @import "fonts"
 @import "container"
+@import "media"
+
+html,
+body
+  margin: 0
+  padding: 0
+
+html
+  font-size: 62.5%
+
+  +respond($phone)
+    font-size: 50%
+
+
+body
+  box-sizing: border-box
+
+*,
+*::before,
+*::after
+  box-sizing: inherit
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+  margin: 0
+  padding: 0
