@@ -1,0 +1,9 @@
+$phone: 600px
+$tab: 900px
+$small-desktop: 1024px
+$med-desktop: 1440px
+$big-desktop: 1920px
+
+@mixin respond($breakpoint)
+  @media (max-width: $breakpoint)
+    @content

@@ -5,6 +5,12 @@
 
   background-color: $wrapper-color
 
+  +respond($small-desktop)
+    min-height: 90vh
+    height: auto
+
+    padding: 4rem 0
+
   .item
     margin-bottom: 2.2rem
 
@@ -14,6 +20,9 @@
     align-items: center
 
     height: 100%
+
+    +respond($small-desktop)
+      flex-direction: column
 
     .info
       flex-basis: 45%
@@ -43,11 +52,10 @@
           margin-right: 2rem
 
     .phone
-      position: relative
+      flex-basis: 35%
 
-      height: 90%
-
-      flex-basis: 40%
+      max-height: 90vh
+      max-width: 100%
 
       z-index: 1
 

@@ -5,14 +5,24 @@
 
   padding: 5rem 0
 
-  border-top: 2px solid rgba(#e5e6e5, .44)
+  border-top: 2px solid $download-app-border-top
+
+  +respond($small-desktop)
+    flex-direction: column
 
   .content
+    +respond($small-desktop)
+      display: flex
+      flex-direction: column
+      align-items: center
+
+      text-align: center
+
     .title
-      font-size: 4.3rem
+      font-size: $download-title-font-size
 
     .description
-      font-size: 1.6rem
+      font-size: $download-description-font-size
 
     .stores
       display: flex
@@ -22,9 +32,18 @@
         width: 18.5rem
         height: 5.5rem
 
+        +pointer-on-hover
+
         &:not(:last-of-type)
           margin-right: 3rem
 
   .image
-    width: 45vw
-    height: get-height(45vw, 1.78)
+    width: 34vw
+
+    +respond($med-desktop)
+      width: 40vw
+
+    +respond($small-desktop)
+      width: 100vw
+
+      margin-top: 4rem
