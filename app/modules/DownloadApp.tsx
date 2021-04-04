@@ -5,7 +5,7 @@ import styles from "@/styles/modules/DownloadApp.module.sass"
 
 const DownloadApp: React.FC = () => {
   return (
-    <div className="container">
+    <div className={`${styles.wrapper} container`}>
       <div className={styles.section}>
         <div className={styles.content}>
           <h2 className={styles.title}>Download our App now !</h2>
