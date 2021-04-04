@@ -1,4 +1,5 @@
 import * as React from "react"
+import Link from "next/link"
 
 import TryButton from "@/components/base/try-button/TryButton"
 
@@ -14,11 +15,31 @@ const Nav: React.FC<NavProps> = ({ light = false, withoutButton = false }: NavPr
     <nav>
       <div className={styles.nav}>
         <ul className={`${styles.list} ${light ? styles.light : ""}`}>
-          <li className={styles.item}>Home</li>
-          <li className={styles.item}>Key Features</li>
-          <li className={styles.item}>Pricing</li>
-          <li className={styles.item}>Testiminial</li>
-          <li className={styles.item}>FAQ</li>
+          <li className={styles.item}>
+            <Link href="/">
+              <a className={styles.link}>Home</a>
+            </Link>
+          </li>
+          <li className={styles.item}>
+            <Link href="/features">
+              <a className={styles.link}>Key Features</a>
+            </Link>
+          </li>
+          <li className={styles.item}>
+            <Link href="/pricing">
+              <a className={styles.link}>Pricing</a>
+            </Link>
+          </li>
+          <li className={styles.item}>
+            <Link href="/testiminial">
+              <a className={styles.link}>Testiminial</a>
+            </Link>
+          </li>
+          <li className={styles.item}>
+            <Link href="/faq">
+              <a className={styles.link}>FAQ</a>
+            </Link>
+          </li>
         </ul>
         <div className={styles.hamburger}>
           <span className={`${styles.line} ${light ? styles.light : ""}`}> </span>

@@ -13,13 +13,15 @@
 
     list-style: none
 
-    color: $nav-color
-
     +respond($small-desktop)
       display: none
 
     .item
       margin-left: 2.5rem
+
+      .link
+        color: $nav-color
+        text-decoration: none
 
       +pointer-on-hover()
 
