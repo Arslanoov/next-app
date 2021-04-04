@@ -1,8 +1,9 @@
 import * as React from "react"
-
-import TryButton from "@/components/base/try-button/TryButton"
+import Link from "next/link"
 
 import styles from "@/styles/modules/Nav.module.sass"
+
+import TryButton from "@/components/base/try-button/TryButton"
 
 interface NavProps {
   light?: boolean,
@@ -13,12 +14,32 @@ const Nav: React.FC<NavProps> = ({ light = false, withoutButton = false }: NavPr
   return (
     <nav>
       <div className={styles.nav}>
-        <ul className={`${styles.list} ${light ? styles.light : ""}`}>
-          <li className={styles.item}>Home</li>
-          <li className={styles.item}>Key Features</li>
-          <li className={styles.item}>Pricing</li>
-          <li className={styles.item}>Testiminial</li>
-          <li className={styles.item}>FAQ</li>
+        <ul className={styles.list}>
+          <li className={styles.item}>
+            <Link href="/">
+              <a className={`${styles.link} ${light ? styles.light : ""}`}>Home</a>
+            </Link>
+          </li>
+          <li className={styles.item}>
+            <Link href="/features">
+              <a className={`${styles.link} ${light ? styles.light : ""}`}>Key Features</a>
+            </Link>
+          </li>
+          <li className={styles.item}>
+            <Link href="/pricing">
+              <a className={`${styles.link} ${light ? styles.light : ""}`}>Pricing</a>
+            </Link>
+          </li>
+          <li className={styles.item}>
+            <Link href="/testiminial">
+              <a className={`${styles.link} ${light ? styles.light : ""}`}>Testiminial</a>
+            </Link>
+          </li>
+          <li className={styles.item}>
+            <Link href="/faq">
+              <a className={`${styles.link} ${light ? styles.light : ""}`}>FAQ</a>
+            </Link>
+          </li>
         </ul>
         <div className={styles.hamburger}>
           <span className={`${styles.line} ${light ? styles.light : ""}`}> </span>
