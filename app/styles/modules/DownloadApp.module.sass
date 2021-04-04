@@ -1,49 +1,50 @@
-.section
-  display: flex
-  justify-content: space-between
-  align-items: center
-
-  padding: 5rem 0
-
+.wrapper
   border-top: 2px solid $download-app-border-top
 
-  +respond($small-desktop)
-    flex-direction: column
+  .section
+    display: flex
+    justify-content: space-between
+    align-items: center
 
-  .content
+    padding: 5rem 0
+
     +respond($small-desktop)
-      display: flex
       flex-direction: column
-      align-items: center
 
-      text-align: center
+    .content
+      +respond($small-desktop)
+        display: flex
+        flex-direction: column
+        align-items: center
 
-    .title
-      font-size: $download-title-font-size
+        text-align: center
 
-    .description
-      font-size: $download-description-font-size
+      .title
+        font-size: $download-title-font-size
 
-    .stores
-      display: flex
+      .description
+        font-size: $download-description-font-size
 
-      .store
-        position: relative
-        width: 18.5rem
-        height: 5.5rem
+      .stores
+        display: flex
 
-        +pointer-on-hover
+        .store
+          position: relative
+          width: 18.5rem
+          height: 5.5rem
 
-        &:not(:last-of-type)
-          margin-right: 3rem
+          +pointer-on-hover
 
-  .image
-    width: 34vw
+          &:not(:last-of-type)
+            margin-right: 3rem
 
-    +respond($med-desktop)
-      width: 40vw
+    .image
+      width: 34vw
 
-    +respond($small-desktop)
-      width: 100vw
+      +respond($med-desktop)
+        width: 40vw
 
-      margin-top: 4rem
+      +respond($small-desktop)
+        width: 100vw
+
+        margin-top: 4rem
