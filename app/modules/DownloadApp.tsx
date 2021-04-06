@@ -1,5 +1,4 @@
 import * as React from "react"
-import Image from "next/image"
 
 import styles from "@/styles/modules/DownloadApp.module.sass"
 
@@ -14,12 +13,8 @@ const DownloadApp: React.FC = () => {
             and the world`&apos;s most relevant channels such as Facebook.
           </p>
           <div className={styles.stores}>
-            <div className={styles.store}>
-              <Image src="/assets/images/download/app-store.jpg" layout="fill" />
-            </div>
-            <div className={styles.store}>
-              <Image src="/assets/images/download/google-play.jpg" layout="fill" />
-            </div>
+            <img className={styles.store} src="/assets/images/download/app-store.jpg" alt=""/>
+            <img className={styles.store} src="/assets/images/download/google-play.jpg" alt=""/>
           </div>
         </div>
         <img className={styles.image} src="/assets/images/download/app.png" alt="" />

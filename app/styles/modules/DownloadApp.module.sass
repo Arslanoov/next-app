@@ -29,9 +29,10 @@
         display: flex
 
         .store
-          position: relative
           width: 18.5rem
-          height: 5.5rem
+
+          +respond($phone)
+            width: 15rem
 
           +pointer-on-hover
 
