@@ -43,6 +43,8 @@ const Nav: React.FC<NavProps> = ({ light = false, withoutButton = false }: NavPr
         </ul>
         <div className={styles.hamburger}>
           <span className={`${styles.line} ${light ? styles.light : ""}`}> </span>
+          <span className={`${styles.line} ${light ? styles.light : ""}`}> </span>
+          <span className={`${styles.line} ${light ? styles.light : ""}`}> </span>
         </div>
         {withoutButton ? "" : <div className={styles.button}>
           <TryButton />

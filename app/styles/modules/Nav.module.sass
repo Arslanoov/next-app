@@ -39,32 +39,12 @@
     .line
       position: relative
 
-      &.light,
-      &.light::before,
-      &.light::after
-        color: $white
-        background-color: $white
+      width: $hamburger-width
+      height: $hamburger-line-height
 
-      &,
-      &::before,
-      &::after
-        width: $hamburger-width
-        height: $hamburger-line-height
+      margin-bottom: .5rem
 
-        background-color: $hamburger-background
-
-      &::before,
-      &::after
-        content: ""
-
-        position: absolute
-        left: 0
-
-      &::before
-        top: $hamburger-line-gap
-
-      &::after
-        bottom: $hamburger-line-gap
+      background-color: $hamburger-background
 
       +pointer-on-hover
 
