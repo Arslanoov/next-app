@@ -4,7 +4,7 @@ import MainLayout from "@/layouts/main"
 
 import styles from "@/styles/modules/pages/Home.module.sass"
 
-import TryButton from "@/components/base/try-button/TryButton"
+import Button from "@/components/base/button/Button"
 import Badge from "@/components/base/badge/Badge"
 
 const Home: React.FC = () => {
@@ -23,7 +23,7 @@ const Home: React.FC = () => {
             </p>
             <div className={`${styles.item} ${styles.demo}`}>
               <div className={styles.button}>
-                <TryButton />
+                <Button content="Try for free" />
               </div>
               <p>Watch demo video</p>
             </div>

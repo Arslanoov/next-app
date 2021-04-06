@@ -1,0 +1,93 @@
+.features
+  .info
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    margin-bottom: 8rem
+
+    +respond($tab)
+      flex-direction: column
+      justify-content: center
+
+      margin-bottom: 5rem
+
+    .title,
+    .description
+      flex-basis: 42%
+
+    .title
+      font-size: $additional-feature-title-font-size
+      font-weight: $additional-feature-title-font-weight
+
+    .line
+      align-self: stretch
+
+      width: .1rem
+
+      background-color: $features-line-background
+
+      +respond($tab)
+        width: 100%
+        height: .1rem
+
+        margin: 2rem 0
+
+    .description
+      color: $features-description-color
+
+      font-size: $additional-features-description-font-size
+      font-weight: $additional-features-description-font-weight
+      line-height: $additional-features-description-line-height
+
+  .list
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    margin: 2rem 0
+
+    +respond($small-tab)
+      flex-direction: column
+      justify-content: center
+
+    .item
+      display: inline-flex
+      flex-direction: column
+
+      align-items: flex-start
+
+      flex-basis: 25%
+
+      +respond($small-tab)
+        align-items: center
+
+        text-align: center
+
+        &:not(:last-child)
+          padding-bottom: 2rem
+
+      .round
+        width: auto
+
+        margin-right: 2rem
+        margin-bottom: 2rem
+
+        padding: 1.5rem
+
+        border-radius: 5rem
+
+        +respond($small-tab)
+          margin-right: 0
+          margin-bottom: 1rem
+
+        .icon
+          width: 5rem
+
+      .feature
+        font-size: $feature-title-font-size
+        font-weight: $feature-title-font-weight
+
+      .description
+        font-size: $feature-description-font-size
+        font-weight: $feature-description-font-weight
