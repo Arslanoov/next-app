@@ -3,7 +3,7 @@ import Link from "next/link"
 
 import styles from "@/styles/modules/Nav.module.sass"
 
-import TryButton from "@/components/base/try-button/TryButton"
+import Button from "@/components/base/button/Button"
 
 interface NavProps {
   light?: boolean,
@@ -47,7 +47,7 @@ const Nav: React.FC<NavProps> = ({ light = false, withoutButton = false }: NavPr
           <span className={`${styles.line} ${light ? styles.light : ""}`}> </span>
         </div>
         {withoutButton ? "" : <div className={styles.button}>
-          <TryButton />
+          <Button content="Try for free" />
         </div>}
       </div>
     </nav>

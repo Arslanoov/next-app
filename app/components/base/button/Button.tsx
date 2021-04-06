@@ -2,12 +2,16 @@ import * as React from "react"
 
 import styles from "@/styles/modules/components/base/TryButton.module.sass"
 
-const TryButton: React.FC = () => {
+interface ButtonProps {
+  content: string
+}
+
+const BaseButton: React.FC<ButtonProps> = ({ content }: ButtonProps) => {
   return (
     <div className={styles.button}>
-      Try for free
+      {content}
     </div>
   )
 }
 
-export default TryButton
+export default BaseButton

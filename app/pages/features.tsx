@@ -3,8 +3,9 @@ import { useState } from "react"
 
 import MainLayout from "@/layouts/main"
 
-import MainFeatures from "@/components/common/main-features/MainFeatures";
-import AdditionalFeatures from "@/components/common/additional-features/AdditionalFeatures";
+import MainFeatures from "@/components/common/main-features/MainFeatures"
+import AdditionalFeatures from "@/components/common/additional-features/AdditionalFeatures"
+import Integration from "@/components/common/integration/Integration"
 
 const Features: React.FC = () => {
   const [mainFeatures, setMainFeatures] = useState([
@@ -71,6 +72,7 @@ const Features: React.FC = () => {
     <MainLayout title="Home">
       <MainFeatures features={mainFeatures} />
       <AdditionalFeatures features={additionalFeatures} />
+      <Integration />
     </MainLayout>
   )
 }

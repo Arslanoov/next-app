@@ -1,0 +1,45 @@
+.integration
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+  padding: 5rem 0
+
+  +respond($tab)
+    flex-direction: column
+    justify-content: center
+    text-align: center
+
+  .image
+    +respond($small-desktop)
+      width: 40vw
+
+    +respond($tab)
+      width: 75%
+
+    +respond($phone)
+      width: 100%
+
+  .content
+    flex-basis: 40%
+
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+
+    +respond($tab)
+      align-items: center
+
+    .title
+      font-size: $integration-title-font-size
+      line-height: $integration-title-line-height
+
+      +respond($tab)
+        margin-top: 2rem
+
+    .description
+      font-size: $integration-description-font-size
+
+      color: $integration-description-color
+
+      margin-bottom: 2.5rem
