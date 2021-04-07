@@ -75,12 +75,75 @@ const Features: React.FC = () => {
     }
   ])
 
+  const [chooseAppFeatures, setChooseAppFeatures] = useState([
+    {
+      id: 7,
+      icon: "/assets/images/reasons/icons/1.png",
+      background: "#ffecef",
+      color: "#000",
+      title: "Automatic Payouts",
+      description: "Get your blood tests delivered at\n" +
+        "home collect a sample from the\n" +
+        "news your blood tests."
+    },
+    {
+      id: 8,
+      icon: "/assets/images/reasons/icons/2.png",
+      background: "#eaf9ff",
+      color: "#000",
+      title: "Network Effect",
+      description: "Get your blood tests delivered at\n" +
+        "home collect a sample from the\n" +
+        "news your blood tests."
+    },
+    {
+      id: 9,
+      icon: "/assets/images/reasons/icons/3.png",
+      background: "#fff6d3",
+      color: "#000",
+      title: "Bigger Rewards Method",
+      description: "Get your blood tests delivered at\n" +
+        "home collect a sample from the\n" +
+        "news your blood tests."
+    },
+    {
+      id: 10,
+      icon: "/assets/images/reasons/icons/4.png",
+      background: "#e4ffee",
+      color: "#000",
+      title: "Bigger Rewards Method",
+      description: "Get your blood tests delivered at\n" +
+        "home collect a sample from the\n" +
+        "news your blood tests."
+    },
+    {
+      id: 11,
+      icon: "/assets/images/reasons/icons/5.png",
+      background: "#f4f4ff",
+      color: "#000",
+      title: "Bigger Rewards Method",
+      description: "Get your blood tests delivered at\n" +
+        "home collect a sample from the\n" +
+        "news your blood tests."
+    },
+    {
+      id: 12,
+      icon: "/assets/images/reasons/icons/6.png",
+      background: "#fdeee4",
+      color: "#000",
+      title: "Bigger Rewards Method",
+      description: "Get your blood tests delivered at\n" +
+        "home collect a sample from the\n" +
+        "news your blood tests."
+    }
+  ])
+
   return (
     <MainLayout title="Home">
       <MainFeatures features={mainFeatures} />
       <AdditionalFeatures features={additionalFeatures} />
       <Integration />
-      <ChooseApp />
+      <ChooseApp features={chooseAppFeatures} />
     </MainLayout>
   )
 }

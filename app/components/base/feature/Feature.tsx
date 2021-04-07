@@ -30,7 +30,7 @@ const Feature: React.FC<FeatureProps> = ({ feature, direction, justify, align, b
         <img className={styles.icon} src={feature.icon} alt=""/>
       </div>
       <div>
-        <h4 className={styles.feature} style={{ color: feature.color }}>{feature.title}</h4>
+        <h4 className={styles.title} style={{ color: feature.color }}>{feature.title}</h4>
         <p className={styles.description}>{feature.description}</p>
       </div>
     </div>

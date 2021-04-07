@@ -1,0 +1,75 @@
+.section
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+  margin: 5rem 0
+
+  +respond($small-desktop)
+    margin: 2rem 0
+
+  +respond($tab)
+    margin: 0
+
+  .item
+    &:not(:last-of-type)
+      margin-bottom: 1rem
+
+  .title
+    width: 40%
+
+    margin-bottom: 1rem
+
+    text-align: center
+
+    font-size: $choose-app-title-font-size
+
+    +respond($small-desktop)
+      width: 75%
+
+    +respond($tab)
+      width: 100%
+
+  .description
+    width: 60%
+
+    text-align: center
+
+    font-size: $choose-app-description-font-size
+    color: $choose-app-description-color
+
+    +respond($small-desktop)
+      width: 75%
+
+    +respond($tab)
+      width: 100%
+
+  .list
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    flex-wrap: wrap
+
+    margin: 0 5rem
+
+    +respond($small-desktop)
+      margin: 0 2rem
+
+    +respond($tab)
+      justify-content: center
+
+    .feature
+      flex-basis: 28%
+
+      text-align: center
+
+      +respond($small-desktop)
+        flex-basis: 45%
+
+      +respond($tab)
+        flex-basis: 75%
+
+      +respond($phone)
+        flex-basis: 100%

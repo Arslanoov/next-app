@@ -3,17 +3,31 @@
 
   margin: 2rem 0
 
-  .round
-    margin-right: 2rem
+  +respond($tab)
+    margin: 1rem 0
 
-    padding: 1.5rem
+  .round
+    display: flex
+    justify-content: center
+    align-items: center
+
+    flex-shrink: 0
+
+    width: $feature-icon-size + ($feature-icon-padding * 2)
+    height: $feature-icon-size + ($feature-icon-padding * 2)
+
+    margin-right: 2rem
+    margin-bottom: 1rem
 
     border-radius: 5rem
 
-    .icon
-      width: 5rem
+    +respond($small-desktop)
+      margin: 1rem
 
-  .feature
+    .icon
+      width: $feature-icon-size
+
+  .title
     font-size: $feature-title-font-size
     font-weight: $feature-title-font-weight
 

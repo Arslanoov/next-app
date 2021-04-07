@@ -3,7 +3,8 @@ import * as React from "react"
 import styles from "@/styles/modules/components/common/MainFeatures.module.sass"
 
 import { FeatureInterface } from "@/interfaces/feature"
-import Feature from "@/components/base/feature/Feature";
+
+import Feature from "@/components/base/feature/Feature"
 
 interface MainFeaturesProps {
   features: FeatureInterface[]
