@@ -1,0 +1,37 @@
+.feature
+  display: flex
+
+  margin: 2rem 0
+
+  +respond($tab)
+    margin: 1rem 0
+
+  .round
+    display: flex
+    justify-content: center
+    align-items: center
+
+    flex-shrink: 0
+
+    width: $feature-icon-size + ($feature-icon-padding * 2)
+    height: $feature-icon-size + ($feature-icon-padding * 2)
+
+    margin-right: 2rem
+    margin-bottom: 1rem
+
+    border-radius: 5rem
+
+    +respond($small-desktop)
+      margin: 1rem
+
+    .icon
+      width: $feature-icon-size
+
+  .title
+    font-size: $feature-title-font-size
+    font-weight: $feature-title-font-weight
+
+  .description
+    font-size: $feature-description-font-size
+    font-weight: $feature-description-font-weight
+    color: $features-description-color

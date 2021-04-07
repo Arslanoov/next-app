@@ -4,6 +4,8 @@ import styles from "@/styles/modules/components/common/AdditionalFeatures.module
 
 import { FeatureInterface } from "@/interfaces/feature"
 
+import Feature from "@/components/base/feature/Feature"
+
 interface AdditionalFeaturesProps {
   features: FeatureInterface[]
 }
@@ -26,17 +28,16 @@ const AdditionalFeatures: React.FC<AdditionalFeaturesProps> = ({ features }: Add
           </div>
         </div>
         <div className={styles.list}>
-          {features.map(feature => (
-            <div className={styles.item} key={feature.title}>
-              <div className={styles.round} style={{ backgroundColor: feature.background }}>
-                <img className={styles.icon} src={feature.icon} alt=""/>
-              </div>
-              <div>
-                <h4 className={styles.feature} style={{ color: feature.color }}>{feature.title}</h4>
-                <p className={styles.description}>{feature.description}</p>
-              </div>
-            </div>
-          ))}
+          {features.map(feature =>
+            <Feature
+              key={feature.id}
+              feature={feature}
+              direction="column"
+              justify="center"
+              align="flex-start"
+              basis="25%"
+            />
+          )}
         </div>
       </div>
     </div>
