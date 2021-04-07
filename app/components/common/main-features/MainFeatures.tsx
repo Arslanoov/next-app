@@ -3,6 +3,7 @@ import * as React from "react"
 import styles from "@/styles/modules/components/common/MainFeatures.module.sass"
 
 import { FeatureInterface } from "@/interfaces/feature"
+import Feature from "@/components/base/feature/Feature";
 
 interface MainFeaturesProps {
   features: FeatureInterface[]
@@ -22,17 +23,9 @@ const MainFeatures: React.FC<MainFeaturesProps> = ({ features }: MainFeaturesPro
             </p>
           </div>
           <div className={styles.list}>
-            {features.map(feature => (
-              <div className={styles.item} key={feature.title}>
-                <div className={styles.round} style={{ backgroundColor: feature.background }}>
-                  <img className={styles.icon} src={feature.icon} alt=""/>
-                </div>
-                <div>
-                  <h4 className={styles.feature} style={{ color: feature.color }}>{feature.title}</h4>
-                  <p className={styles.description}>{feature.description}</p>
-                </div>
-              </div>
-            ))}
+            {features.map(feature =>
+              <Feature key={feature.id} feature={feature} direction="row" justify="space-between" align="center" />
+            )}
           </div>
         </div>
       </div>
