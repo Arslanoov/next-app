@@ -183,7 +183,7 @@ const Features: React.FC = () => {
   ])
 
   return (
-    <MainLayout title="Home">
+    <MainLayout title="Features">
       <MainFeatures features={mainFeatures} />
       <AdditionalFeatures features={additionalFeatures} />
       <Integration />
