@@ -4,5 +4,12 @@ export interface PriceVariantInterface {
 }
 
 export interface PriceInterface {
-
+  id: number,
+  price: number,
+  period: string,
+  name: string,
+  description: string,
+  features: string[],
+  action: string,
+  trial?: string
 }

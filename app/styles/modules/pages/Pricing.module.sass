@@ -1,0 +1,54 @@
+.section
+  padding: 3rem 0
+
+  .info
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    text-align: center
+
+    .title
+      width: 50%
+
+      margin-bottom: 1rem
+
+      font-size: $pricing-title-font-size
+      font-weight: $pricing-title-font-weight
+
+      +respond($small-desktop)
+        width: 80%
+
+      +respond($tab)
+        width: 100%
+
+    .description
+      width: 60%
+
+      font-size: $pricing-description-font-size
+
+      color: $pricing-section-description-color
+
+      +respond($small-desktop)
+        width: 85%
+
+      +respond($tab)
+        width: 100%
+
+  .prices
+    display: flex
+    justify-content: center
+
+    margin-top: 4rem
+
+    +respond($phone)
+      flex-direction: column
+      align-items: center
+
+    .item
+      &:not(:last-of-type)
+        margin-right: 4rem
+
+        +respond($phone)
+          margin-bottom: 5rem
+          margin-right: 0
