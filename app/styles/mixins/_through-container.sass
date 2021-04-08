@@ -1,0 +1,17 @@
+@mixin throw-container-right($additional: 0rem)
+  transform: translateX(calc(15px + #{$additional}))
+
+  @media (min-width: 350px)
+    transform: translateX(calc(35px + #{$additional}))
+
+  @media (min-width: 575.98px)
+    transform: translateX(calc(50vw - 270px + #{$additional}))
+
+  @media (min-width: 767.98px)
+    transform: translateX(calc(50vw - 360px + #{$additional}))
+
+  @media (min-width: 991.98px)
+    transform: translateX(calc(50vw - 480px + #{$additional}))
+
+  @media (min-width: 1199.98px)
+    transform: translateX(calc(50vw - 590px + #{$additional}))

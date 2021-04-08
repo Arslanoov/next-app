@@ -1,14 +1,17 @@
 import * as React from "react"
 
-import styles from "@/styles/modules/components/base/TryButton.module.sass"
+import styles from "@/styles/modules/components/base/Button.module.sass"
 
 interface ButtonProps {
-  content: string
+  content: string,
+  padding?: string
 }
 
-const BaseButton: React.FC<ButtonProps> = ({ content }: ButtonProps) => {
+const BaseButton: React.FC<ButtonProps> = ({ content, padding = "1.6rem 3.2rem" }: ButtonProps) => {
   return (
-    <div className={styles.button}>
+    <div className={styles.button} style={{
+      padding
+    }}>
       {content}
     </div>
   )

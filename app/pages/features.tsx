@@ -7,6 +7,7 @@ import MainFeatures from "@/components/common/main-features/MainFeatures"
 import AdditionalFeatures from "@/components/common/additional-features/AdditionalFeatures"
 import Integration from "@/components/common/integration/Integration"
 import ChooseApp from "@/components/common/choose-app/ChooseApp"
+import UltimateFeatures from "@/components/common/ultimate-features/UltimateFeatures";
 
 const Features: React.FC = () => {
   const [mainFeatures, setMainFeatures] = useState([
@@ -138,12 +139,56 @@ const Features: React.FC = () => {
     }
   ])
 
+  const [ultimateFeatures, setUltimateFeatures] = useState([
+    {
+      id: 13,
+      icon: "/assets/images/ultimate/icons/1.png",
+      background: "#ffecef",
+      color: "#000",
+      title: "App Development",
+      description: "Get your blood tests delivered at\n" +
+        "home collect a sample from the\n" +
+        "news your blood tests."
+    },
+    {
+      id: 14,
+      icon: "/assets/images/ultimate/icons/2.png",
+      background: "#e4ffee",
+      color: "#000",
+      title: "UX Planing",
+      description: "Get your blood tests delivered at\n" +
+        "home collect a sample from the\n" +
+        "news your blood tests."
+    },
+    {
+      id: 15,
+      icon: "/assets/images/ultimate/icons/3.png",
+      background: "#fff6d3",
+      color: "#000",
+      title: "Cloud Storage",
+      description: "Get your blood tests delivered at\n" +
+        "home collect a sample from the\n" +
+        "news your blood tests."
+    },
+    {
+      id: 16,
+      icon: "/assets/images/ultimate/icons/4.png",
+      background: "#f4f4ff",
+      color: "#000",
+      title: "Customer support",
+      description: "Get your blood tests delivered at\n" +
+        "home collect a sample from the\n" +
+        "news your blood tests."
+    }
+  ])
+
   return (
     <MainLayout title="Home">
       <MainFeatures features={mainFeatures} />
       <AdditionalFeatures features={additionalFeatures} />
       <Integration />
       <ChooseApp features={chooseAppFeatures} />
+      <UltimateFeatures features={ultimateFeatures} />
     </MainLayout>
   )
 }
