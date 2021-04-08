@@ -1,0 +1,74 @@
+.price
+  display: flex
+  flex-direction: column
+  align-items: center
+
+  border-radius: .9rem
+
+  &:hover
+    border: $pricing-border
+
+    .body
+      box-shadow: $pricing-shadow
+
+  .face,
+  .body
+    padding: 2.5rem 5rem
+
+  .face
+    background-image: $pricing-grey-gradient
+
+    .title
+      .value
+        font-size: $pricing-title-value-font-size
+        font-weight: $pricing-title-value-font-weight
+
+      .period
+        font-size: $pricing-title-period-font-size
+
+        color: $pricing-description-color
+
+    .name
+      font-size: $pricing-title-name-font-size
+      font-weight: $pricing-title-name-font-weight
+
+    .description
+      font-size: $pricing-title-description-font-size
+      color: $pricing-description-color
+
+  .body
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    width: 100%
+
+    transition: box-shadow .4s
+
+    border: $pricing-border
+    border-top: 0
+    border-radius: .9rem
+
+    &:hover
+      border: 0
+
+    .features
+      margin-top: 4rem
+
+      font-size: $pricing-title-feature-font-size
+      color: $pricing-features-color
+
+      .feature
+        &:not(:last-of-type)
+          margin-bottom: 2.5rem
+
+  .action
+    margin-top: 4rem
+
+  .trial
+    margin-top: 3rem
+
+    font-size: $pricing-title-trial-font-size
+    color: $pricing-trial-color
+
+    +pointer-on-hover
