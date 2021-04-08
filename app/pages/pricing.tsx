@@ -56,11 +56,13 @@ const Features: React.FC = () => {
     <MainLayout title="Pricing">
       <div className="container">
         <div className={classes.section}>
-          <h2 className={classes.title}>Get awesome features, without extra charges</h2>
-          <p className={classes.description}>
-            The rise of mobile devices transforms the way we consume information entirely
-            and the world&apos;s most relevant channels such as Facebook.
-          </p>
+          <div className={classes.info}>
+            <h2 className={classes.title}>Get awesome features, without extra charges</h2>
+            <p className={classes.description}>
+              The rise of mobile devices transforms the way we consume information entirely
+              and the world&apos;s most relevant channels such as Facebook.
+            </p>
+          </div>
           <PriceVariantsSelect variants={variants} />
           <div className={classes.prices}>
             {prices.map(price => <div key={price.id} className={classes.item}>
