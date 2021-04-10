@@ -13,7 +13,11 @@ interface ReviewProps {
 const Review: React.FC<ReviewProps> = ({ review }: ReviewProps) => {
   const stars = []
   for (let i = 0; i < 5; i++) {
-    stars.push(<FontAwesomeIcon className={`${classes.star} ${i < review.stars ? classes.filled : ""}`} icon="star" />)
+    stars.push(<FontAwesomeIcon
+      key={i}
+      className={`${classes.star} ${i < review.stars ? classes.filled : ""}`}
+      icon="star"
+    />)
   }
 
   return (

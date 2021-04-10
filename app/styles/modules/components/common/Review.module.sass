@@ -3,12 +3,12 @@
   flex-direction: column
 
   .title
-    font-size: 2rem
-    font-weight: 600
+    font-size: $review-title-font-size
+    font-weight: $review-title-font-weight
 
   .content
-    font-size: 1.6rem
-    color: #616368
+    font-size: $review-content-font-size
+    color: $review-content-color
 
   .stars
     display: flex
@@ -17,15 +17,15 @@
     margin-bottom: 1.5rem
 
     .star
-      font-size: 2rem
+      font-size: $review-star-font-size
 
-      color: grey
+      color: $review-star-not-filled-color
 
       &.filled
-        color: #ffcc00
+        color: $review-star-filled-color
 
       &:not(:first-of-type)
-        margin-left: .4rem
+        margin-left: $review-star-gap
 
   .author
     display: flex
@@ -51,16 +51,16 @@
 
         .name,
         .about
-          font-size: 1.8rem
+          font-size: $review-info-font-size
 
         .name
-          font-weight: 600
+          font-weight: $review-name-font-weight
 
         .about
           margin-top: .5rem
           margin-bottom: 0
 
-          color: #616368
+          color: $review-info-about-color
 
   .arrows
     display: flex
@@ -71,11 +71,11 @@
 
       transform: scale(.5)
 
-      width: .1rem
+      width: $review-line-width
 
-      margin: 0 .8rem
+      margin: $review-line-margin
 
-      background-color: #e7e7e7
+      background-color: $review-line-background
 
     .left,
     .right
@@ -83,20 +83,20 @@
       justify-content: center
       align-items: center
 
-      width: 5rem
-      height: 5rem
+      width: $review-arrow-size
+      height: $review-arrow-size
 
-      border-radius: 5rem
+      border-radius: $review-arrow-size
 
-      font-size: 1.8rem
+      font-size: $review-arrow-font-size
 
-      background-color: #eff3f8
-      color: #2500f9
+      background-color: $review-arrow-background-color
+      color: $review-arrow-color
 
       +pointer-on-hover
 
       &.selected
-        background-color: transparent
-        color: #dee1e6
+        background-color: $review-arrow-selected-background-color
+        color: $review-arrow-selected-color
 
-        border: 2px solid #eff3f8
+        border: $review-arrow-selected-border-color
