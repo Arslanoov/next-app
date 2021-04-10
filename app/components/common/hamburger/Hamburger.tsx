@@ -1,10 +1,10 @@
 import * as React from "react"
+import { useState } from "react"
+import Link from "next/link"
 
 import styles from "@/styles/modules/components/common/Hamburger.module.sass"
 
 import { PageInterface } from "@/interfaces/page"
-import Link from "next/link";
-import {useState} from "react";
 
 interface HamburgerProps {
   light?: boolean,
