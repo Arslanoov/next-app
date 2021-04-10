@@ -50,6 +50,8 @@ module.exports = {
     "no-unused-vars": "off",
 
     "no-plusplus": [2, { allowForLoopAfterthoughts: true }],
+    "@typescript-eslint/no-empty-function": "off",
+
 
     /* TODO: enable rules */
     "react/jsx-props-no-spreading": "off",

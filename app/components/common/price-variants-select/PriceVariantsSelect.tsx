@@ -19,7 +19,7 @@ const PriceVariantsSelect: React.FC<PriceSelectProps> = ({ variants }: PriceSele
           key={variant.id}
           tabIndex={variant.id}
           onClick={() => selectVariant(variant.id)}
-          onKeyDown={() => selectVariant(variant.id)}
+          onKeyDown={() => {}}
           className={`${classes.variant} ${selectedVariant === variant.id ? classes.selected : ""}`}
           role="button"
         >
