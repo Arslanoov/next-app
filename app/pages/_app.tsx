@@ -6,9 +6,18 @@ import "@/styles/main.sass"
 
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { fab } from "@fortawesome/free-brands-svg-icons"
-import { faCheckSquare, faCoffee } from "@fortawesome/free-solid-svg-icons"
+import {
+  faStar,
+  faArrowLeft,
+  faArrowRight
+} from "@fortawesome/free-solid-svg-icons"
 
-library.add(fab, faCheckSquare, faCoffee)
+library.add(
+  fab,
+  faStar,
+  faArrowLeft,
+  faArrowRight
+)
 
 const App: React.FC<AppProps> = ({ Component, pageProps }: AppProps) => {
   return (

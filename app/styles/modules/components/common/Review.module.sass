@@ -1,0 +1,102 @@
+.review
+  display: flex
+  flex-direction: column
+
+  .title
+    font-size: $review-title-font-size
+    font-weight: $review-title-font-weight
+
+  .content
+    font-size: $review-content-font-size
+    color: $review-content-color
+
+  .stars
+    display: flex
+    align-items: center
+
+    margin-bottom: 1.5rem
+
+    .star
+      font-size: $review-star-font-size
+
+      color: $review-star-not-filled-color
+
+      &.filled
+        color: $review-star-filled-color
+
+      &:not(:first-of-type)
+        margin-left: $review-star-gap
+
+  .author
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    margin-top: .5rem
+
+    .wrapper
+      display: flex
+      align-items: center
+
+      .avatar
+        width: 9rem
+        height: 9rem
+
+        margin-right: 3rem
+
+      .info
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+
+        .name,
+        .about
+          font-size: $review-info-font-size
+
+        .name
+          font-weight: $review-name-font-weight
+
+        .about
+          margin-top: .5rem
+          margin-bottom: 0
+
+          color: $review-info-about-color
+
+  .arrows
+    display: flex
+    align-items: center
+
+    .line
+      align-self: stretch
+
+      transform: scale(.5)
+
+      width: $review-line-width
+
+      margin: $review-line-margin
+
+      background-color: $review-line-background
+
+    .left,
+    .right
+      display: flex
+      justify-content: center
+      align-items: center
+
+      width: $review-arrow-size
+      height: $review-arrow-size
+
+      border-radius: $review-arrow-size
+
+      font-size: $review-arrow-font-size
+
+      background-color: $review-arrow-background-color
+      color: $review-arrow-color
+
+      +pointer-on-hover
+
+      &.selected
+        background-color: $review-arrow-selected-background-color
+        color: $review-arrow-selected-color
+
+        border: $review-arrow-selected-border-color

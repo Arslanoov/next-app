@@ -1,0 +1,43 @@
+.section
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+  padding: 3rem 0
+
+  +respond($small-desktop)
+    flex-direction: column
+    justify-content: center
+
+  .map
+    flex-basis: 50%
+
+    +respond($med-desktop)
+      +throw-container-left(-1rem)
+
+    +respond($small-desktop)
+      transform: none
+
+      margin-bottom: 5rem
+
+  .content
+    display: flex
+    flex-direction: column
+
+    flex-basis: 50%
+
+    .title
+      margin-bottom: 1rem
+
+      font-size: $testiminial-title-font-size
+      font-weight: $testiminial-title-font-weight
+
+      color: $testiminial-title-color
+
+    .description
+      margin-bottom: 3rem
+
+      font-size: $testiminial-description-font-size
+
+      color: $testiminial-description-color
+
