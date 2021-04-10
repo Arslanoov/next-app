@@ -36,15 +36,22 @@
       display: flex
       flex-direction: column
 
+      margin-top: .5rem
+
+    &.light
+      .line
+        background-color: $white
+
     .line
       position: relative
 
       width: $hamburger-width
       height: $hamburger-line-height
 
-      margin-bottom: .5rem
-
       background-color: $hamburger-background
+
+      &:not(:last-of-type)
+        margin-bottom: .5rem
 
       +pointer-on-hover
 
