@@ -1,0 +1,55 @@
+.item
+  width: 100%
+
+  padding: 2rem 5rem
+
+  background-color: $faq-item-background-color
+
+  transition: padding $faq-item-animation-time
+
+  &.opened
+    padding: 5rem
+
+    .header
+      margin-bottom: 3.5rem
+
+      .add
+        opacity: 0
+
+    .answer
+      font-size: $faq-item-answer-font-size
+
+      opacity: 1
+
+  .header
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    margin-bottom: 0
+    transition: margin-bottom $faq-item-animation-time
+
+    outline: 0
+
+    +pointer-on-hover
+
+    .question
+      font-size: $faq-item-question-font-size
+      font-weight: $faq-item-question-font-weight
+
+    .add
+      opacity: 1
+
+      font-size: $faq-item-add-font-size
+
+      color: $faq-item-add-icon-color
+
+      transition: opacity $faq-item-animation-time
+
+  .answer
+    font-size: 0
+    opacity: 0
+
+    transition: font-size $faq-item-animation-time, opacity $faq-item-animation-time $faq-item-animation-time
+
+    color: $faq-item-answer-color
