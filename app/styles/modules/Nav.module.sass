@@ -29,31 +29,6 @@
 
       +pointer-on-hover()
 
-  .hamburger
-    display: none
-
-    +respond($small-desktop)
-      display: flex
-      flex-direction: column
-
-      margin-top: .5rem
-
-    &.light
-      .line
-        background-color: $white
-
-    .line
-      position: relative
-
-      width: $hamburger-width
-      height: $hamburger-line-height
-
-      background-color: $hamburger-background
-
-      &:not(:last-of-type)
-        margin-bottom: .5rem
-
-      +pointer-on-hover
 
   .button
     margin-left: 2rem
