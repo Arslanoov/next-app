@@ -1,0 +1,102 @@
+.review
+  display: flex
+  flex-direction: column
+
+  .title
+    font-size: 2rem
+    font-weight: 600
+
+  .content
+    font-size: 1.6rem
+    color: #616368
+
+  .stars
+    display: flex
+    align-items: center
+
+    margin-bottom: 1.5rem
+
+    .star
+      font-size: 2rem
+
+      color: grey
+
+      &.filled
+        color: #ffcc00
+
+      &:not(:first-of-type)
+        margin-left: .4rem
+
+  .author
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    margin-top: .5rem
+
+    .wrapper
+      display: flex
+      align-items: center
+
+      .avatar
+        width: 9rem
+        height: 9rem
+
+        margin-right: 3rem
+
+      .info
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+
+        .name,
+        .about
+          font-size: 1.8rem
+
+        .name
+          font-weight: 600
+
+        .about
+          margin-top: .5rem
+          margin-bottom: 0
+
+          color: #616368
+
+  .arrows
+    display: flex
+    align-items: center
+
+    .line
+      align-self: stretch
+
+      transform: scale(.5)
+
+      width: .1rem
+
+      margin: 0 .8rem
+
+      background-color: #e7e7e7
+
+    .left,
+    .right
+      display: flex
+      justify-content: center
+      align-items: center
+
+      width: 5rem
+      height: 5rem
+
+      border-radius: 5rem
+
+      font-size: 1.8rem
+
+      background-color: #eff3f8
+      color: #2500f9
+
+      +pointer-on-hover
+
+      &.selected
+        background-color: transparent
+        color: #dee1e6
+
+        border: 2px solid #eff3f8

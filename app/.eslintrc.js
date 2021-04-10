@@ -49,6 +49,8 @@ module.exports = {
     "quotes": [ "error", "double" ],
     "no-unused-vars": "off",
 
+    "no-plusplus": [2, { allowForLoopAfterthoughts: true }],
+
     /* TODO: enable rules */
     "react/jsx-props-no-spreading": "off",
     "import/extensions": "off",
