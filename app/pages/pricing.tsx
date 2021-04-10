@@ -12,7 +12,7 @@ const Features: React.FC = () => {
   const [variants, setVariants] = useState([
     {
       id: 1,
-      name: "Montly"
+      name: "Monthly"
     },
     {
       id: 2,
