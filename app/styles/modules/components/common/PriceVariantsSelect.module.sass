@@ -19,16 +19,18 @@
 
       padding: 1.2rem 3rem
 
-      outline: none
-
       color: $price-select-variant-color
+      background-color: transparent
+
+      backface-visibility: hidden
+
+      outline: 0
+      border-radius: 5rem
+
+      transition: $price-variants-select-animation
 
       +pointer-on-hover
 
       &.selected
+        color: $white
         background-color: $price-select-selected-variant-color
-        border-radius: 5rem
-
-        transition: color .2s, background-color .3s
-
-        color: white

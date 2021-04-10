@@ -5,7 +5,7 @@ import styles from "@/styles/modules/components/common/UltimateFeatures.module.s
 import { FeatureInterface } from "@/interfaces/feature"
 
 import Feature from "@/components/base/feature/Feature"
-import Button from "@/components/base/button/Button";
+import Button from "@/components/base/button/Button"
 
 interface UltimateFeaturesProps {
   features: FeatureInterface[]

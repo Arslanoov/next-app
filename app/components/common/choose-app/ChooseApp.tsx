@@ -10,8 +10,6 @@ interface ChooseAppProps {
   features: FeatureInterface[]
 }
 
-/* TODO: Add lines */
-
 const ChooseApp: React.FC<ChooseAppProps> = ({ features }: ChooseAppProps) => {
   return (
     <div className="container">

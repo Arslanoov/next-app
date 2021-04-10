@@ -1,0 +1,76 @@
+.hamburger
+  display: none
+
+  &:focus
+    outline: 0
+
+  +respond($small-desktop)
+    position: relative
+
+    display: flex
+    flex-direction: column
+
+  &.light
+    .line
+      background-color: $white
+
+  .line
+    position: relative
+
+    width: $hamburger-width
+    height: $hamburger-line-height
+
+    background-color: $hamburger-not-light-background
+
+    &:not(:last-of-type)
+      margin-bottom: .5rem
+
+    +pointer-on-hover
+
+.menu
+  display: none
+  opacity: 0
+
+  +respond($small-desktop)
+    position: absolute
+    top: 8.2rem
+    right: 10%
+
+    background-color: $hamburger-menu-background-color
+
+    display: flex
+    flex-direction: column
+
+    transition: $hamburger-menu-animation
+
+    border: $hamburger-menu-border-color
+
+    +respond($tab)
+      right: 20%
+
+    &.opened
+      opacity: 1
+
+      .list
+        display: block
+
+  .list
+    display: none
+
+    padding: 0 2rem
+
+    list-style: none
+
+    .item
+      padding: 1rem
+
+      .link
+        color: $nav-color
+        text-decoration: none
+
+        &.light
+          color: $white
+
+      +pointer-on-hover()
+
+  z-index: 1
